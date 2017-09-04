@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/ripples.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+
+  </head>
+  <body>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">BerniDesign</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Diseños</a></li>
+          <li><a href="bio.html">Sobre mí</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+<h4>BIOGRAFIA</h4>
+
+
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          // Create a map object and specify the DOM element for display.
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async defer></script>
+
+
+  <!--
+<div class="row">
+  <div class="bio_container">
+    <div class="jumbotron">
+      <img class="img-circle img_autos" src="images/golf2.jpg" alt="GolfGti">
+      <p class="bio_text">
+        Lionel Andrés Messi Cuccittini, conocido cómo Lionel Messi o simplemente “Lio”, es un futbolista argentino que nació en Rosario, provincia de Santa Fe, el 24 de junio de 1987 y actúa como delantero o extremo derecho. Viene de familia de escasos recursos económicos, conformada por su padre Jorge Horacio Messi trabajador de una fábrica y su madre Celia María Cuccittini trabajadora de oficios varios. Su abuela materna Celia Olivera, fue quien lo impulsó y motivó a tomar el fútbol como carrera profesional, por eso en el año 1992 cuando tenía 5 años empezó su formación como futbolista en el club.<br><br>
+
+        Abanderado Grandoli, que era uno de los equipos formativos de Rosario. En el año 1994, Lionel Messi arrancó su paso por las divisiones inferiores por Newell’s Old Boys donde empezó a dar muestra de su habilidad con el balón y a obtener varios títulos nacionales. A la edad de 11 años, el jugador recibió una noticia no muy grata, ya que se le diagnosticó deficiencia en la hormona de crecimiento, lo que lo empezaba a hacer poco atractivo a los clubes importantes de fútbol a pesar del gran talento que tenía, sin embargo, esto no fue impedimento para que Messi continuara con sus aspiraciones de ser futbolista profesional.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+-->
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8tEj_SR8Sdv4V_CXDX5Vv66kuesJDv3w&callback=myMap"></script>
+
+    <!--Scripts-->
+
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/main.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap-material-design/dist/js/material.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap-material-design/dist/js/ripples.js"></script>
+    <script type="text/javascript">
+      $.material.init();
+    </script>
+  </body>
+
+  <footer>
+    <div class="center_elements">
+      <img src="images/facebook.png" class="social" alt="Facebook">
+      <img src="images/youtube.png" class="social" alt="YouTube">
+    </div>
+  </footer>
+</html>

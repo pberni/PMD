@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/ripples.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 50%;
+        width: 70%;
+        margin: auto;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+  </head>
+  <body>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">BerniDesign</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Diseños</a></li>
+          <li><a href="bio.html">Sobre mí</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+  <div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/slide1.jpg" alt="Imagen 1">
+        </div>
+        <div class="item">
+          <img src="images/slide2.jpg" alt="Imagen 2">
+        </div>
+        <div class="item">
+          <img src="images/slide3.jpg" alt="Imagen 3">
+        </div>
+        <div class="item">
+          <img src="images/slide4.jpg" alt="Imagen 4">
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <h4 class="frameworks_title">Programas</h4>
+      <div class="col-md-4 listCircle">
+            <div class="list-group">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                    <img class="circle" src="images/angular.png" alt="circle">
+                  </div>
+                  <div class="row-content">
+                    <h4 class="list-group-item-heading">Angular.js</h4>
+                    <p class="list-group-item-text">Framework para desarrollar aplicaciones web</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                    <img class="circle" src="images/AutoCad.png" alt="circle">
+                  </div>
+                  <div class="row-content">
+                    <h4 class="list-group-item-heading">AutoCad</h4>
+                    <p class="list-group-item-text">Presición y calidad en el diseño de planos</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 listCircle">
+
+          <div class="list-group">
+            <div class="list-group-item">
+                <div class="row-picture">
+                  <img class="circle" src="images/lumion.jpg" alt="circle">
+                </div>
+                <div class="row-content">
+                  <h4 class="list-group-item-heading">Lumion</h4>
+                  <p class="list-group-item-text">Renderizados como nunca antes</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="list-group">
+            <div class="list-group-item">
+                <div class="row-picture">
+                  <img class="circle" src="images/sketchup.jpg" alt="circle">
+                </div>
+                <div class="row-content">
+                  <h4 class="list-group-item-heading">Sketchup</h4>
+                  <p class="list-group-item-text">Software de diseño simple y muy potente</p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+
+<!--
+      <a class="btn btn-danger btn-fab" data-toggle="modal" data-target="#MyModal">
+        MODAL
+      </a>
+-->
+
+<!--  Progressbar  -->
+<div class="row">
+  <h4 class="frameworks_title">Idiomas</h4>
+    <div class="col-md-6">
+      <p>Español</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" style="width: 60%"></div>
+      </div>
+      <p>Inglés</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p>Frances</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" style="width: 5%"></div>
+      </div>
+      <p>Aleman</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 2%"></div>
+      </div>
+    </div>
+</div>
+
+
+
+<!--  Paneles-->
+<h4 class="frameworks_title">Autos Favoritos</h4>
+<div class="row">
+
+  <div class="col-md-4">
+    <div class="well well-lg">
+      <img class="img-circle img_autos" src="images/golf1.jpg" alt="Golf">
+      <h4 class="autos_titulo">Golf MK4</h4>
+      <p class="autos_description">
+        El Golf MK4 fue uno de los mas vendidos ya que fue uno de los primeros en incorporar
+        el motor 1.8T (Turbo).
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="well well-lg">
+      <img class="img-circle img_autos" src="images/golf2.jpg" alt="GolfGti">
+      <h4 class="autos_titulo">Golf GTi</h4>
+      <p class="autos_description">
+        El Golf GTi es el auto que todos soñamos tener, posee un motor de dos litros
+        que alcanza una potencia de mas de 230cv.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="well well-lg">
+      <img class="img-circle img_autos" src="images/gol.jpg" alt="Gol">
+      <h4 class="autos_titulo">Gol Trend</h4>
+      <p class="autos_description">
+        El Gol Trend es un auto creado para el mercosur. Posee un motor de 1.6 litros de 101cv.
+        Dentro de poco saldrá una nueva versión con el motor 1.0 Turbo y con la plataforma MQB.
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div id="map"></div>
+
+<footer>
+  <div class="center_elements">
+    <img src="images/facebook.png" class="social" alt="Facebook">
+    <img src="images/youtube.png" class="social" alt="YouTube">
+  </div>
+</footer>
+
+
+
+
+
+
+
+    <!-- Modal
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<div class="fab">
+      <button type="button" class="btn btn-danger btn-fab" data-toggle="modal" data-target="#myModal">
+        <span class="glyphicon glyphicon-user fabicon" aria-hidden="true"></span>
+      </button>
+</div>
+
+
+  <div id="myModal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" name="button">
+            <span aria-hidden="True">&times;</span>
+
+          </button>
+          <h3 class="modal-title" id="mymodalLabel">Saludos!!!</h3>
+        </div>
+        <div class="modal-body">
+          <p>Gracias por visitar nuestra web</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" name="button">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" name="button">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -25.611487, lng: -54.561396},
+        zoom: 16
+      });
+    }
+  </script>
+    <!--Scripts-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8tEj_SR8Sdv4V_CXDX5Vv66kuesJDv3w&callback=initMap"
+    async defer></script>
+    <!--<script type="text/javascript" src="node_modules/bootstrap/dist/js/main.js"></script> -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap-material-design/dist/js/material.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap-material-design/dist/js/ripples.js"></script>
+    <script type="text/javascript">
+      $.material.init();
+    </script>
+  </body>
+</html>
